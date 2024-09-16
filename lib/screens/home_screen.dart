@@ -1,6 +1,7 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
+import 'package:fluttersample1/screens/coffee_screen.dart';
 import 'package:fluttersample1/screens/profile_screen.dart';
 import 'package:fluttersample1/settings/colors_settings.dart';
 import 'package:fluttersample1/settings/global_values.dart';
@@ -38,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
             break;
 
           default:
-            return ProfileScreen();
+            return CoffeeScreen();
         }
       }),
       //endDrawer: Drawer(),

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ThemeSettings {
   static ThemeData lightTheme() {
     final theme = ThemeData.light();
-    return theme.copyWith(scaffoldBackgroundColor: Colors.amber);
+    return theme.copyWith(scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255));
   }
 
   static ThemeData darkTheme() {
