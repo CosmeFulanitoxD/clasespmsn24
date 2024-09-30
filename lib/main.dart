@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttersample1/screens/home_screen.dart';
 import 'package:fluttersample1/screens/login_screen.dart';
+import 'package:fluttersample1/screens/movies_screen.dart';
 import 'package:fluttersample1/settings/global_values.dart';
 import 'package:fluttersample1/settings/theme_settings.dart';
 
@@ -20,8 +21,11 @@ class MyApp extends StatelessWidget {
                 ? ThemeSettings.darkTheme()
                 : ThemeSettings.lightTheme(),
             debugShowCheckedModeBanner: false,
-            home: LoginScreen(),
-            routes: {"/home": (context) => HomeScreen()},
+            home: HomeScreen(),
+            routes: {
+              "/home": (context) => HomeScreen(),
+              "/db": (context) => MoviesScreen()
+            },
           );
         });
   }

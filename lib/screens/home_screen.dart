@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
         }
       }),
       //endDrawer: Drawer(),
-      drawer: Drawer(),
+      drawer: myDrawer(),
       bottomNavigationBar: ConvexAppBar(
         items: [
           TabItem(icon: Icons.home, title: 'home'),
@@ -59,16 +59,40 @@ class _HomeScreenState extends State<HomeScreen> {
         key: _key,
         children: [
           FloatingActionButton.small(
+              heroTag: "btn1",
               onPressed: () {
                 GlobalValues.banthemeDark.value = false;
               },
               child: const Icon(Icons.light_mode)),
           FloatingActionButton.small(
+            heroTag: "btn2",
             onPressed: () {
               GlobalValues.banthemeDark.value = true;
             },
             child: const Icon(Icons.dark_mode),
           ),
+        ],
+      ),
+    );
+  }
+
+  Widget myDrawer() {
+    return Drawer(
+      child: ListView(
+        children: [
+          UserAccountsDrawerHeader(
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: NetworkImage('https://i.pravatar.cc/300'),
+              ),
+              accountName: const Text('Max Palma'),
+              accountEmail: const Text('max.a.palma.mtz@gmail.com')),
+          ListTile(
+            onTap: () => Navigator.pushNamed(context, '/db'),
+            title: Text('Movies List'),
+            subtitle: Text('Database of movies'),
+            leading: Icon(Icons.movie),
+            trailing: Icon(Icons.chevron_right),
+          )
         ],
       ),
     );
