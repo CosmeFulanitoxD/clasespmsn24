@@ -13,7 +13,7 @@ class MovieViewItem extends StatefulWidget {
     required this.moviesdao,
   });
 
-  Moviesdao moviesdao;
+  MoviesDAO moviesdao;
 
   @override
   State<MovieViewItem> createState() => _MovieViewItemState();

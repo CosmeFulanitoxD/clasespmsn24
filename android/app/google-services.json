@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "963023191453",
+    "project_id": "fireiskool-f4955",
+    "storage_bucket": "fireiskool-f4955.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963023191453:android:f8c60c016f07324af1c374",
+        "android_client_info": {
+          "package_name": "com.example.fluttersample1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP5lWdbxsrwDC9kzo0-_JTSPD9WKG_CCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
